@@ -3,7 +3,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>{{post.title}}</title>
+    {% block head %}
+      <title>{{post.title}} - Blog Details</title>
+    {% endblock head %}
   </head>
   <body>
     {% block content %}
