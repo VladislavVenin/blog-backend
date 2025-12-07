@@ -1,16 +1,12 @@
+{% extends "base.html" %}
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Remake Barber - Blog Details</title>
-    <link rel="icon" href="{% static "img/favicon.png" %}" type="image/png">
-
-    <link rel="stylesheet" href="{% static "styles.min.css" %}">
+    <title>{{post.title}}</title>
   </head>
   <body>
+    {% block content %}
     <!--================Header Menu Area =================-->
     <header class="header_area">
       <div class="main_menu">
@@ -219,5 +215,6 @@
     <!--================ End Footer Area =================-->
 
     <script src="{% static "scripts.js" %}"></script>
+  {% endblock content %}
   </body>
 </html>
